@@ -65,7 +65,7 @@ def predict_deepfake(features, mask):
     return prediction, frame_confidences
 
 # Sidebar
-st.sidebar.image("https://via.placeholder.com/150", caption="DefendAI - By Ritik Raushan", use_container_width=True)
+st.sidebar.image("https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/654f275567497c712f38faf0_DeepFake.webp", caption="DefendAI - By Ritik Raushan", use_container_width=True)
 st.sidebar.markdown("## About DefendAI 🛡️")
 st.sidebar.write("DefendAI helps detect deepfake videos using AI-powered models. Simply upload a video and get a prediction result.")
 st.sidebar.markdown("---")
