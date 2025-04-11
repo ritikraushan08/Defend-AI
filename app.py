@@ -105,7 +105,7 @@ if uploaded_file is not None:
 
             st.subheader("Prediction Result 🧐")
             st.write("**Prediction Score:**", round(prediction, 4))
-            if prediction > 0.5:
+            if prediction > 0.52:
                 st.error("⚠️ The video is likely a Deepfake!")
             else:
                 st.success("✅ The video appears to be real.")
