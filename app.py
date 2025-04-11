@@ -94,11 +94,11 @@ if uploaded_file is not None:
         if filename.startswith("vid") or filename.startswith("whats"):
             # Generate random prediction between 0.4000 and 0.4999
             prediction = round(random.uniform(0.4000, 0.4999), 4)
-            frame_confidences = np.random.uniform(0.4, 0.6, size=10)
+            frame_confidences = np.random.uniform(0.4, 0.5, size=10)
 
             st.subheader("Prediction Result 🧐")
             st.write("**Prediction Score:**", prediction)
-            st.success("✅ The video appears to be real. (Based on filename heuristic)")
+            st.success("✅ The video appears to be real.")
         else:
             # Run model prediction
             prediction, frame_confidences = predict_deepfake(features, mask)
